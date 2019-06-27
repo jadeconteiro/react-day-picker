@@ -1,17 +1,14 @@
 {
   "name": "react-day-picker",
-  "version": "7.3.0",
-  "description": "Flexible date picker component for React",
+  "version": "1.0.0",
+  "description": "An accessible datepicker component for React",
   "main": "DayPicker.js",
-  "style": "lib/style.css",
-  "types": "./types/index.d.ts",
+  "style": "dist/style.css",
   "files": [
     "DayPicker.js",
     "DayPickerInput.js",
-    "DayPickerInput.d.ts",
-    "lib",
+    "dist",
     "moment.js",
-    "moment.d.ts",
     "utils.js",
     "types"
   ],
@@ -19,17 +16,17 @@
     "doc": "docs"
   },
   "scripts": {
-    "clean": "rimraf coverage lib",
+    "clean": "rimraf coverage dist",
     "lint": "eslint src test",
     "dtslint": "dtslint types",
     "test": "jest",
     "check": "npm run lint && npm run dtslint && npm run test",
     "prerelease": "npm run check && npm run build",
-    "build": "rimraf lib && npm run build:node && npm run build:production && npm run build:development",
-    "build:node": "babel ./src -d ./lib/src --source-maps && npm run build:css",
+    "build": "rimraf dist && npm run build:node && npm run build:production && npm run build:development",
+    "build:node": "babel ./src -d ./dist/src --source-maps && npm run build:css",
     "build:development": "cross-env NODE_ENV=development webpack",
     "build:production": "cross-env NODE_ENV=production webpack -p",
-    "build:css": "postcss src/style.css --use autoprefixer -d lib/ --no-map"
+    "build:css": "postcss src/style.css --use autoprefixer -d dist/ --no-map"
   },
   "repository": {
     "type": "git",

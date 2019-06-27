@@ -5,13 +5,13 @@
 /* eslint-disable no-var */
 /* eslint-env node */
 
-var DayPicker = require('./lib/src/DayPicker');
-var DateUtils = require('./lib/src/DateUtils');
-var LocaleUtils = require('./lib/src/LocaleUtils');
-var ModifiersUtils = require('./lib/src/ModifiersUtils');
-var Weekday = require('./lib/src/Weekday');
-var Navbar = require('./lib/src/Navbar');
-var PropTypes = require('./lib/src/PropTypes');
+var DayPicker = require('./dist/src/DayPicker');
+var DateUtils = require('./dist/src/DateUtils');
+var LocaleUtils = require('./dist/src/LocaleUtils');
+var ModifiersUtils = require('./dist/src/ModifiersUtils');
+var Weekday = require('./dist/src/Weekday');
+var Navbar = require('./dist/src/Navbar');
+var PropTypes = require('./dist/src/PropTypes');
 
 module.exports = DayPicker;
 module.exports.DateUtils = DateUtils;

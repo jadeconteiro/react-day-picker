@@ -2,6 +2,6 @@
 
 'use strict';
 
-module.exports.localeUtils = require('./lib/src/LocaleUtils');
-module.exports.dateUtils = require('./lib/src/DateUtils');
-module.exports.modifiersUtils = require('./lib/src/ModifiersUtils');
+module.exports.localeUtils = require('./dist/src/LocaleUtils');
+module.exports.dateUtils = require('./dist/src/DateUtils');
+module.exports.modifiersUtils = require('./dist/src/ModifiersUtils');
